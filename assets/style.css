@@ -1,69 +1,70 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Exo, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Exo, sans-serif;
 }
 
-body, html {
-    width: 100%;
-    min-height: 100vh;
-    overflow: auto;
-    background-color: rgb(218, 218, 218);
+body,
+html {
+  width: 100%;
+  min-height: 100vh;
+  overflow: auto;
+  background-color: rgb(218, 218, 218);
 }
 
-.Home{
-    position: relative;
-    background-image: radial-gradient(
-        farthest-corner at 40px 40px,
-        #50c5ee 60%,
-        rgba(0, 212, 255, 0.5) 100%
-      );
-    min-height: calc(100vh - 60px);
-    margin: 15px;
-    padding: 15px;
-    border-radius: 20px;
-    color: black;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+.Home {
+  position: relative;
+  background-image: radial-gradient(
+    farthest-corner at 40px 40px,
+    #3bb1b1 60%,
+    rgba(0, 255, 213, 0.5) 100%
+  );
+  min-height: calc(100vh - 60px);
+  margin: 15px;
+  padding: 15px;
+  border-radius: 20px;
+  color: black;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
 }
 
-.Home h2{
-    display: flex;
-    justify-content: center;
-    color: black;
-    margin-top: 1rem;
+.Home h2 {
+  display: flex;
+  justify-content: center;
+  color: black;
+  margin-top: 1rem;
 }
 
-.Home__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
+.Home__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
 @media (max-width: 350px) {
-    .Home__container {
-      justify-content: unset;
-    }
+  .Home__container {
+    justify-content: unset;
   }
+}
 
-.PaletaLista{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 25px 50px;
+.PaletaLista {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px 50px;
 }
 
 @media (max-width: 1220px) {
-    .PaletaLista {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  .PaletaLista {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-  @media (max-width: 840px) {
-    .PaletaLista {
-      grid-template-columns: 1fr;
-    }
+@media (max-width: 840px) {
+  .PaletaLista {
+    grid-template-columns: 1fr;
+  }
 }
 
 .PaletaCardItem,
@@ -77,24 +78,24 @@ body, html {
 }
 
 .PaletaCardItem {
-    margin: 20px 0;
-    height: 150px;
-    width: 100%;
+  margin: 20px 0;
+  height: 150px;
+  width: 100%;
 }
 
-  @media (max-width: 400px) {
-    .PaletaCardItem,
-    .PaletaListaItem {
-      width: 210px;
-      height: 180px;
-    }
+@media (max-width: 400px) {
+  .PaletaCardItem,
+  .PaletaListaItem {
+    width: 210px;
+    height: 180px;
+  }
 }
-  
-  .PaletaCardItem > div,
-  .PaletaListaItem > div {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+
+.PaletaCardItem > div,
+.PaletaListaItem > div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .PaletaCardItem__sabor,
@@ -111,7 +112,8 @@ body, html {
 
 .PaletaCardItem__preco,
 .PaletaListaItem__preco {
-  color: darkviolet;
+  color: rgb(156, 8, 112);
+  font-weight: 600;
 }
 
 .PaletaListaItem__foto {
@@ -119,134 +121,134 @@ body, html {
   margin-right: -60px;
 }
 
-.paleta-escolhida-espaco{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
+.paleta-escolhida-espaco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }
 
-#idPaleta{
-    padding: .5rem;
-    width: 315px;
-    border: none;
-    border-radius: .2rem;
+#idPaleta {
+  padding: 0.5rem;
+  width: 315px;
+  border: none;
+  border-radius: 0.4rem;
 }
 
-#idPaletaButton{
-    background-color: transparent;
-    border: 2px solid darkviolet;
-    padding: .4rem;
-    color: darkviolet;
-    font-weight: 600;
-    border-radius: .2rem;
-    width: 330px;
-    margin-top: .5rem;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
-    font-size: 1rem;
+#idPaletaButton {
+  background-color: transparent;
+  border: 2px solid rgb(156, 5, 118);
+  padding: 0.4rem;
+  color: rgb(139, 9, 139);
+  font-weight: 600;
+  border-radius: 0.5rem;
+  width: 330px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
 }
 
-#idPaletaButton:hover{
-    background-color: darkviolet;
-    color: #addbec;
+#idPaletaButton:hover {
+  background-color: rgb(155, 18, 155);
+  color: #d3edf7;
 }
 
-#paleta-escolhida-input-espaco{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+#paleta-escolhida-input-espaco {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
-.Header{
-    max-width: 1110px;
-    margin: 0 auto 25px auto;
-    position: relative;
+.Header {
+  max-width: 1110px;
+  margin: 0 auto 25px auto;
+  position: relative;
 }
 
 .row {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin: 20px 0 35px 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 20px 0 35px 0;
 }
 
 .Logo {
-    display: flex;
-    align-items: center;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.3);
-    width: 340px;
-    height: 45px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 340px;
+  height: 45px;
 }
 
 .Logo__titulo {
-    position: absolute;
-    left: 55px;
-    font-family: "Exo";
-    font-weight: 700;
-    font-size: 2.5em;
+  position: absolute;
+  left: 55px;
+  font-family: 'Exo';
+  font-weight: 700;
+  font-size: 2.5em;
 }
 
 .Logo__icone {
-    position: absolute;
-    left: -20px;
-    top: -15px;
+  position: absolute;
+  left: -20px;
+  top: -15px;
 }
 
 .Sacola {
-    position: relative;
+  position: relative;
 }
-  
+
 .Sacola__icone {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .Sacola__badge {
-    background-color: red;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    vertical-align: middle;
-    position: absolute;
-    color: white;
-    font-size: 0.9em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    bottom: 0;
-    right: 0;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  color: white;
+  font-size: 0.9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  bottom: 0;
+  right: 0;
 }
 
 @media (max-width: 1220px) {
-    .Header {
-      max-width: 720px;
-    }
+  .Header {
+    max-width: 720px;
   }
-  
+}
+
 @media (max-width: 840px) {
-    .Header {
-      max-width: 320px;
-    }
+  .Header {
+    max-width: 320px;
+  }
 }
-  
+
 @media (max-width: 400px) {
-    .Header {
-      max-width: 250px;
-}
-  
-.row {
-      column-gap: 20px;
-}
-  
-.Logo__titulo {
-      font-size: 1.5em;
-    }
+  .Header {
+    max-width: 250px;
+  }
+
+  .row {
+    column-gap: 20px;
+  }
+
+  .Logo__titulo {
+    font-size: 1.5em;
+  }
 }
 
 .PaletaCardItem__foto {
-    height: 150px;
-    margin-right: -60px;
+  height: 150px;
+  margin-right: -60px;
 }
