@@ -119,14 +119,14 @@ const paletas = [
     preco: 14.0,
   },
   {
-    id: 17,
+    id: 18,
     sabor: 'Ninho com Ovomaltine',
     descricao: 'Paleta sabor ninho com recheio de ovomaltine',
     foto: './assets/images/ninho-com-ovomaltine.png',
     preco: 14.0,
   },
   {
-    id: 18,
+    id: 19,
     sabor: 'Uva',
     descricao: 'Paleta sabor uva feita com a própria fruta',
     foto: './assets/images/uva.png',
